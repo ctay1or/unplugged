@@ -457,10 +457,6 @@ header nav ul {
 }
 
 
-/* Hero Area */
-
-
-
 /* Aside */
 aside .content-wrapper {
   margin: 50px 0;
@@ -474,6 +470,7 @@ aside .content-wrapper .form-description {
   width: 40%;
   margin: 0;
 }
+
 
 /* Features */
 .features article {
@@ -497,6 +494,7 @@ aside .content-wrapper .form-description {
   width: 49%;
 }
 
+
 /* Footer */
 footer .content-wrapper {
   width: 65%;
@@ -512,6 +510,7 @@ footer .contact {
   margin-bottom: 0;
 }
 
+
 /* Copyright */
 .copyright {
   width: 100%;
@@ -519,7 +518,7 @@ footer .contact {
 
 
 
-/* === About === */
+/* === About page === */
 .mission-content {
   display: flex;
   justify-content: space-between;
@@ -543,7 +542,7 @@ footer .contact {
 
 
 
-/* === FAQ === */
+/* === FAQ page === */
 .faq .content-wrapper {
   justify-content: space-between;
 }
@@ -557,9 +556,70 @@ footer .contact {
 }
 
 
+
 @media only screen and (min-width: 1200px) {
 /* Desktop styles */
 
+/* General styles */
+.content-wrapper {
+  max-width: 960px;
+}
+
+
+/* Header */
+header {
+  padding: 15px 0;
+}
+
+
+/* Hero Area */
+.hero-area h1 {
+  width: 80%;
+}
+
+
+/* Aside */
+aside .content-wrapper {
+  justify-content: space-around;
+}
+
+aside .content-wrapper .form,
+aside .content-wrapper .form-description {
+  width: 30%;
+}
+
+
+/* Features */
+.features h2 {
+  width: 90%;
+}
+
+.features article {
+  flex-basis: 33%;
+}
+
+
+/* Reviews */
+.reviews h2 {
+  padding-bottom: 50px;
+}
+
+.reviews article div {
+  width: 42%;
+}
+
+
+
+/* === About Page === */
+.mission h2,
+.contact-section .content-wrapper h2 {
+  width: 95%;
+}
+
+/* === FAQ Page === */
+.faq h2 {
+  width: 100%;
+}
 
 }
 
