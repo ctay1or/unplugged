@@ -106,6 +106,57 @@ textarea {
    UNPLUGGED site
    ========================================================================== */
 
+   /* General Styles */
+ 
+html {
+	font-size: 1rem;
+}
+ 
+body {
+ font-family: 'Open Sans', sans-serif;
+ font-size: 1em;
+}
+ 
+ul, 
+ol {
+ list-style-type: none;
+}
+ 
+a {
+	color: #e2e3ed;
+  text-decoration: none;
+}
+ 
+h2 {
+ font-family: 'Poppins', sans-serif;
+ font-size: 1.875em;
+ font-weight: 500;
+}
+ 
+h3, 
+h4 {
+ font-family: 'Poppins', sans-serif;
+ font-size: 1.125em;
+ font-weight: 500;
+}
+ 
+p {
+	line-height: 18px;
+  font-size: 0.875em;
+}
+ 
+img {
+ 
+}
+ 
+figure {
+ 
+}
+ 
+address {
+ font-style: normal;
+}
+ 
 .content-wrapper {
   outline: 3px dotted red;
   width: 90%;
@@ -138,6 +189,8 @@ header .header-divider {
 
 header nav {
   width: 60%;
+  font-size: 1.125em;
+  font-weight: bold;
 }
 
 header nav ul {
@@ -198,7 +251,10 @@ footer .copyright {
   justify-content: center;
 }
 
-.hero-area .content-wrapper {
+h1 {
+  font-size: 2.25em;
+  line-height: 43px;
+  font-weight: 500;
 }
 
 
@@ -324,6 +380,10 @@ aside {
   margin-bottom: 50px;
 }
 
+.faq-content h4 {
+  line-height: 24px;
+}
+
 
 
 
@@ -425,12 +485,22 @@ aside {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-/* Tablet styles */
+/* -------------------- Tablet Styles -------------------- */
 
 /* General styles */
 .content-wrapper {
   max-width: 640px;
   margin: 100px 0;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: 48px;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 30px;
 }
 
 
@@ -454,6 +524,13 @@ header nav ul {
 
 .header-divider {
   display: none;
+}
+
+
+/* Hero Area */
+.hero-area h1 {
+  font-size: 3em;
+  line-height: 48px;
 }
 
 
@@ -496,8 +573,17 @@ aside .content-wrapper .form-description {
 
 
 /* Footer */
+
+footer {
+  font-size: 1.5em;
+}
+
 footer .content-wrapper {
   width: 65%;
+}
+
+footer p {
+  line-height: 18px;
 }
 
 footer .content {
@@ -510,6 +596,9 @@ footer .contact {
   margin-bottom: 0;
 }
 
+footer .contact h4 {
+  font-size: 1.5em;
+}
 
 /* Copyright */
 .copyright {
@@ -555,16 +644,31 @@ footer .contact {
   width: 100%;
 }
 
+.faq h4 {
+  font-size: 0.875em;
+  line-height: 15.75px;
+}
+
+.faq p {
+  font-size: 0.875em;
+  line-height: 15.75px;
+}
+
+
+
 
 
 @media only screen and (min-width: 1200px) {
-/* Desktop styles */
+/* -------------------- Desktop Styles -------------------- */
 
 /* General styles */
 .content-wrapper {
   max-width: 960px;
 }
 
+h2 {
+  font-size: 2.25em;
+}
 
 /* Header */
 header {
@@ -575,6 +679,7 @@ header {
 /* Hero Area */
 .hero-area h1 {
   width: 80%;
+  font-size: 3.75em;
 }
 
 
@@ -616,9 +721,14 @@ aside .content-wrapper .form-description {
   width: 95%;
 }
 
+.mission h2 {
+  font-size: 3em;
+}
+
 /* === FAQ Page === */
 .faq h2 {
   width: 100%;
+  font-size: 3em;
 }
 
 }
