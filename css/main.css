@@ -115,6 +115,7 @@ html {
 body {
  font-family: 'Open Sans', sans-serif;
  font-size: 1em;
+ color: #e2e3ed;
 }
  
 ul, 
@@ -123,10 +124,14 @@ ol {
 }
  
 a {
-	color: #e2e3ed;
+  color: #e2e3ed;
   text-decoration: none;
 }
- 
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
 h2 {
  font-family: 'Poppins', sans-serif;
  font-size: 1.875em;
@@ -146,7 +151,7 @@ p {
 }
  
 img {
- 
+ width: 60%;
 }
  
 figure {
@@ -171,6 +176,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 15px 0;
+  background-color: #202322;
 }
 
 header .content-wrapper {
@@ -181,10 +187,16 @@ header .content-wrapper {
   margin: 0;
 }
 
+header a {
+  display: flex;
+  justify-content: center;
+}
+
 header .header-divider {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
+  background-color: #3a3a3a;
 }
 
 header nav {
@@ -197,6 +209,9 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -207,6 +222,7 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: #202322;
 }
 
 footer .content-wrapper {
@@ -225,6 +241,7 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: #527158;
 }
 
 footer .social-icons p {
@@ -249,6 +266,14 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
+  background: url("../img/unplugged-retreat.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 505px;
+}
+
+.hero-area .content-wrapper {
+
 }
 
 h1 {
@@ -264,6 +289,7 @@ h1 {
 aside {
   display: flex;
   justify-content: center;
+  background-color: #527158;
 }
 
 
@@ -272,6 +298,9 @@ aside {
 .features {
   display: flex;
   justify-content: center;
+  background: url("../img/unplugged-retreat-features.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .features h2 {
@@ -292,6 +321,7 @@ aside {
 
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 .features .fontawesome-icon {
@@ -304,14 +334,12 @@ aside {
 .reviews {
   display: flex;
   justify-content: center;
-}
-
-.reviews .content-wrapper {
-  
+  background-color: #2a423a;
 }
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 30px;
 }
 
 .reviews h3 {
@@ -331,6 +359,7 @@ aside {
 .mission {
   display: flex;
   justify-content: center;
+  background-color: #527158;
 }
 
 
@@ -339,6 +368,7 @@ aside {
 .contact-section {
   display: flex;
   justify-content: center;
+  background-color: #2a423a;
 }
 
 .contact-content p {
@@ -362,6 +392,7 @@ aside {
 .faq {
   display: flex;
   justify-content: center;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -373,7 +404,9 @@ aside {
 }
 
 .faq h2 {
-  padding-bottom: 40px;
+  padding-bottom: 15px;
+  line-height: 30px;
+  margin-top: 0;
 }
 
 .faq-content {
@@ -385,6 +418,33 @@ aside {
 }
 
 
+/* Form Styles */
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 
 /* Scroll down for responsive styles ====================================== */
@@ -496,11 +556,16 @@ aside {
 h2 {
   font-size: 2.25em;
   line-height: 48px;
+  margin-top: 0;
 }
 
 h3 {
   font-size: 1.5em;
   line-height: 30px;
+}
+
+h4 {
+  font-size: 1.5em;
 }
 
 
@@ -512,6 +577,13 @@ header {
 header .content-wrapper {
   width: 100%;
   justify-content: space-between;
+  flex-flow: row nowrap;
+}
+
+header .content-wrapper a {
+  display: flex;
+  justify-content: flex-start;
+  width: 55%;
 }
 
 header nav {
@@ -528,9 +600,15 @@ header nav ul {
 
 
 /* Hero Area */
+
+.hero-area {
+  height: 620px;
+}
+
 .hero-area h1 {
   font-size: 3em;
   line-height: 48px;
+  margin-top: 0;
 }
 
 
@@ -550,6 +628,7 @@ aside .content-wrapper .form-description {
 
 
 /* Features */
+
 .features article {
   display: flex;
   align-items: center;
@@ -575,36 +654,44 @@ aside .content-wrapper .form-description {
 /* Footer */
 
 footer {
-  font-size: 1.5em;
+  
 }
 
 footer .content-wrapper {
   width: 65%;
+  margin-bottom: 20px;
+  margin-top: 75px;
 }
 
 footer p {
   line-height: 18px;
+  
 }
 
-footer .content {
+.footer-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
 }
 
-footer .contact {
-  margin-bottom: 0;
+footer .contact,
+footer .social {
+  margin-bottom: 100px;
+  margin-top: 0;
 }
 
-footer .contact h4 {
-  font-size: 1.5em;
-}
 
 /* Copyright */
 .copyright {
   width: 100%;
 }
 
+.copyright p {
+
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
 
 
 /* === About page === */
@@ -612,7 +699,6 @@ footer .contact h4 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding-top: 20px;
 }
 
 .mission-content p {
@@ -621,6 +707,7 @@ footer .contact h4 {
 
 .contact-section .content-wrapper h2 {
   width: 80%;
+  margin-bottom: 15px;
 }
 
 .contact-content {
@@ -670,16 +757,37 @@ h2 {
   font-size: 2.25em;
 }
 
+h3,
+h4 {
+  font-size: 1.875em;
+}
+
+p {
+  font-size: 1em;
+  line-height: 24px;
+}
+
 /* Header */
 header {
+  margin:0;
   padding: 15px 0;
+}
+
+header .content-wrapper a {
+  width: 45%;
 }
 
 
 /* Hero Area */
+
+.hero-area {
+  height: 715px;
+}
+
 .hero-area h1 {
   width: 80%;
   font-size: 3.75em;
+  line-height: 60px;
 }
 
 
@@ -695,6 +803,7 @@ aside .content-wrapper .form-description {
 
 
 /* Features */
+
 .features h2 {
   width: 90%;
 }
@@ -705,6 +814,11 @@ aside .content-wrapper .form-description {
 
 
 /* Reviews */
+
+.reviews {
+  height: 580px;
+}
+
 .reviews h2 {
   padding-bottom: 50px;
 }
@@ -725,11 +839,42 @@ aside .content-wrapper .form-description {
   font-size: 3em;
 }
 
+.mission p {
+  display: flex;
+  flex-basis: 40%;
+}
+
+.contact-section {
+  height: 450px;
+}
+
+.contact-section h2 {
+  font-size: 2.98em;
+  width: 100%;
+}
+
+.contact-content h4 {
+  margin-bottom: 25px
+}
+
 /* === FAQ Page === */
+
+.faq {
+  height: 650px;
+}
+
 .faq h2 {
   width: 100%;
   font-size: 3em;
+  margin-top: 55px;
 }
+
+.faq h4,
+.faq p {
+  font-size: 1.125em;
+  line-height: 18px;
+}
+
 
 }
 
