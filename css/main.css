@@ -715,9 +715,14 @@ footer .social {
   width: 45%;
 }
 
+.map figure {
+  padding-bottom: 45.5%;
+}
+
 .contact-section .content-wrapper h2 {
-  width: 80%;
+  width: 95%;
   margin-bottom: 15px;
+  font-size: 2.25em;
 }
 
 .contact-content {
@@ -726,6 +731,9 @@ footer .social {
   align-items: flex-start;
 }
 
+.contact-content h4 {
+  font-size: 1.5em;
+}
 
 
 /* === FAQ page === */
@@ -861,6 +869,10 @@ aside .content-wrapper .form-description {
 .mission p {
   display: flex;
   flex-basis: 40%;
+}
+
+.map figure {
+  padding-bottom: 37.5%;
 }
 
 .contact-section {
