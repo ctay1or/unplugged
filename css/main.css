@@ -147,8 +147,8 @@ h4 {
 }
  
 p {
-	line-height: 18px;
-  font-size: 0.875em;
+	line-height: 1.285;
+  font-size: .875em;
 }
  
 img {
@@ -164,7 +164,6 @@ address {
 }
  
 .content-wrapper {
-  outline: 3px dotted red;
   width: 90%;
   margin: 50px 0;
 }
@@ -347,9 +346,11 @@ input[type=button] {
   text-align: center;
 }
 
-.features .fontawesome-icon {
-  padding-bottom: 40px;
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
+
 
 
 /* Reviews */
@@ -859,16 +860,13 @@ aside .content-wrapper .form-description {
 /* === About Page === */
 .mission h2,
 .contact-section .content-wrapper h2 {
-  width: 95%;
-}
-
-.mission h2 {
+  width: 97%;
   font-size: 3em;
 }
 
 .mission p {
   display: flex;
-  flex-basis: 40%;
+  flex-basis: 47%;
 }
 
 .map figure {
@@ -876,12 +874,7 @@ aside .content-wrapper .form-description {
 }
 
 .contact-section {
-  height: 450px;
-}
-
-.contact-section h2 {
-  font-size: 2.98em;
-  width: 100%;
+  height: 475px;
 }
 
 .contact-content h4 {
