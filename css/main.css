@@ -117,6 +117,7 @@ body {
  font-size: 1em;
  color: #e2e3ed;
  text-align: left;
+ background-color: #202322;
 }
  
 ul, 
@@ -240,17 +241,25 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #527158;
 }
 
 footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
+footer .social-icons p i {
+  font-size: 1.3125em;
+}
+
+
 footer .copyright {
-  margin: 20px 0;
+  margin-top: 75px;
 }
 
 /* -------------------- Mobile Styles -------------------- */
@@ -635,8 +644,6 @@ aside .content-wrapper .form-description {
 
 
 /* Reviews */
-
-
 .reviews h2 {
   width: 80%;
 }
@@ -663,11 +670,6 @@ aside .content-wrapper .form-description {
 
 
 /* Footer */
-
-footer {
-  
-}
-
 footer .content-wrapper {
   width: 65%;
   margin-bottom: 20px;
@@ -675,8 +677,7 @@ footer .content-wrapper {
 }
 
 footer p {
-  line-height: 18px;
-  
+  line-height: 1.285;
 }
 
 .footer-content {
@@ -692,16 +693,14 @@ footer .social {
   margin-top: 0;
 }
 
-
-/* Copyright */
-.copyright {
-  width: 100%;
+footer .social-icons {
+  width: 12.5em;
+  justify-content: space-between;
 }
 
-.copyright p {
-
-  font-weight: 500;
-  font-family: 'Poppins', sans-serif;
+footer .copyright {
+  width: 100%;
+  margin: 20px 0;
 }
 
 
