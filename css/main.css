@@ -138,6 +138,7 @@ h2 {
  font-family: 'Poppins', sans-serif;
  font-size: 1.875em;
  font-weight: 500;
+ margin-top: 0;
 }
  
 h3, 
@@ -145,6 +146,7 @@ h4 {
  font-family: 'Poppins', sans-serif;
  font-size: 1.125em;
  font-weight: 500;
+ margin-top: 0;
 }
  
 p {
@@ -258,8 +260,12 @@ footer .social-icons p i {
 }
 
 
-footer .copyright {
+.copyright {
   margin-top: 75px;
+}
+
+.copyright p {
+  width: 100%;
 }
 
 /* -------------------- Mobile Styles -------------------- */
@@ -391,6 +397,10 @@ input[type=button] {
   background-color: #527158;
 }
 
+.mission h2 {
+  margin-top: 0;
+}
+
 .map figure {
   position: relative;
   padding-bottom: 125%;
@@ -411,6 +421,14 @@ input[type=button] {
   display: flex;
   justify-content: center;
   background-color: #2a423a;
+}
+
+.contact-section h2 {
+  margin-top: 0;
+}
+
+.contact-section h4 {
+  margin-top: 50px;
 }
 
 .contact-content p {
